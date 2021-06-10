@@ -1,0 +1,38 @@
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  /* width:100% !important; */
+  height: 100% !important;
+  box-sizing: border-box;
+}
+
+.main-div {
+  /* height: 39rem !important; */
+  /* background: #f0f2f5; */
+  /* background: linear-gradient(
+    to right bottom,
+    #ebebeb98,
+    #c9d6ff67 */
+  /* ); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main-form {
+  width: 30%;
+  border: 1px solid rgb(255, 255, 255);
+  float: right;
+  margin-right: 10%;
+
+  /* margin-top: -5%; */
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  border-radius: 12px;
+}
+
+.submit-btn {
+  width: 100%;
+}
+

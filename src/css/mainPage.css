@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+.main-page {
+  margin-left: 5%;
+  transform: translate(0%, 100%);
+}
+.main-page h1 {
+  /* font-family: "Play", sans-serif; */
+  font-size: 70px;
+  font-weight: bolder;
+  color: rgb(27, 87, 250);
+  font-family: 'Michroma', sans-serif !important;
+}
+
+.main-page h2 {
+  width: 50%;
+  font-size: 30px;
+  margin-top: -30px;
+  color: rgb(36, 36, 36);
+  font-family: "Poppins", sans-serif !important;
+}
+.image-div{
+    /* max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border: 0; */
+
+    margin: -3% 0% -23% 0%;
+    width: 35%;
+}

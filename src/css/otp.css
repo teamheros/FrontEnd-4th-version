@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
+.container {
+  width: 100%;
+  min-height: 50vh;
+  height: 80%;
+}
+
+.inputStyle {
+  width: 3rem !important;
+  height: 3rem;
+  margin: 0 1rem;
+  font-size: 2rem;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.555);
+}
+
+
+.btn-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn {
+  background-color: #3273dc;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.btn:disabled {
+  background-color: rgba(36, 35, 35, 0.514);
+  cursor: not-allowed;
+}
+
+.margin-top--small {
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+}
+
+.margin-top--small > div {
+  flex-wrap: wrap;
+}
+
+.margin-top--small > div > div {
+  margin-bottom: 1rem;
+}
+
+.margin-top--medium {
+  margin-top: 1.5rem;
+}
+
+.margin-top--large {
+margin: 30% auto;
+}
+
+.error {
+  border: 1px solid red !important;
+}
+
+.Text-Field {
+  font-family: 'Squada One', cursive;
+  font-size: 30px;
+  color: #003dc2a8;
+}
+
+.card-view {
+  width: 45%;
+  margin: -30% 60%;
+  border-radius: 12px;
+  padding: 50px 10px 10px 30px;
+  box-shadow: 0px 2px 5px rgba(190, 187, 187, 0.945);
+  height: 55vh;
+}
+
+.otpSvgImage {
+  width: 60%;
+margin: 5% 0% -10% -12%;
+}
+
+
+.text-input-otp{
+  width: 80% !important;
+  padding: 20px !important;
+}
+
+.timer{
+  margin: -12% 82.5%;
+}
+
+.resend-btn{
+  font-size: 30px !important;
+  margin: 1.2% auto;
+}

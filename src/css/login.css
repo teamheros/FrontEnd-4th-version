@@ -1,0 +1,26 @@
+
+.link {
+  color: rgb(96, 155, 233) !important;
+  text-decoration: none !important;
+}
+.link:hover {
+  color: rgb(205, 225, 252) !important;
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+.textfield{
+  width: 100% !important;
+}
+.submit-btn{
+ margin: 0 auto !important;
+}
+h4{
+  margin: 0 38% !important;
+}
+h3{
+  margin: 0 29% !important;
+}
+.signup-form{
+  width: 100% !important;
+
+}
