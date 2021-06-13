@@ -1,6 +1,7 @@
 import './userProfile.css';
 import ProfilePic from '../../images/userprofile5.jpg';
 import { useSelector } from 'react-redux';
+import SideNavBar from './ChatSideNav';
 
 const UserProfile = () => {
   const displayCurrentUser = useSelector((state: any) => {
@@ -23,14 +24,19 @@ const UserProfile = () => {
         <p>Sofware Engineer, Mindtree</p>
       </div>
       <div className='profile__card'>
-        <div className='card__header' onClick={toggleInfo}>
+        {/* <div className='card__header' onClick={toggleInfo}>
           <h4 className="information">Information</h4>
           <i className='fa fa-angle-down'></i>
         </div>
         <div className='card__content'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices urna a imperdiet egestas. Donec in
           magna quis ligula
-        </div>
+        </div> */}
+        <br></br>
+        <div className='side__nav'>
+          <SideNavBar />
+          </div>
+      
       </div>
     </div>
   );

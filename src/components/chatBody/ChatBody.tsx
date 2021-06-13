@@ -3,7 +3,7 @@ import "./chatBody.css";
 import ChatList from "../chatList/ChatList";
 import ChatContent from "../chatContent/ChatContent";
 import UserProfile from "../userProfile/UserProfile";
-import { getAllUser, getUserConvo } from '../../services/userServices';
+import { getAllUser, getUserConvo, getUserBioDataById } from '../../services/userServices';
 import { setAllUSer, setCurrentUser, setUserConversation } from "../../redux/actions";
 import { useDispatch } from "react-redux";
 

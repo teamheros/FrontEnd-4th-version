@@ -27,15 +27,3 @@ function App() {
 }
 
 export default App;
-{
-  /* <MainPage />
-          <Nav />
-          <ChatBody />
-
-          <MainPage />
-
-          <Practice />
-
-          <Nav />
-          <ChatBody /> */
-}

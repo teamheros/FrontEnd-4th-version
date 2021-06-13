@@ -2,34 +2,40 @@ import React, { useEffect } from 'react';
 import './chatList.css';
 import ChatListItems from '../chatList/ChatListItem';
 import { useDispatch, useSelector } from 'react-redux';
+import SideNavBar from '../userProfile/ChatSideNav';
 
 
 function ChatList() {
-  const dispatch = useDispatch();
-let displayUsers:any, displayAllUserConvo:any;
- displayUsers = useSelector((state: any) => {
+  
+  let displayUsers: any, displayAllUserConvo: any;
+  displayUsers = useSelector((state: any) => {
     return state.user.user;
   });
 
- displayAllUserConvo = useSelector((state: any) => {
+  displayAllUserConvo = useSelector((state: any) => {
     return state.users.users;
   });
   useEffect(() => {
 
-  },[displayAllUserConvo])
-console.log(displayAllUserConvo);
+  }, [displayAllUserConvo])
+  console.log(displayAllUserConvo);
 
 
-function displayChat(id:any, e:any){
-  e.preventDefault();
-  console.log('Display Chat', id);
-  
-}
+  function displayChat(id: any, e: any) {
+    e.preventDefault();
+    console.log('Display Chat', id);
+
+  }
+
+  const toggleSetting = (e: any) => {
+    e.target.parentNode.classList.toggle('open');
+  };
 
   return (
     <div>
       <div className='main__chatlist'>
         <div className='select-container'>
+          
           <select className='select-users'>
             <option value=''>New Conversation</option>
             {displayUsers.map((option: any) => (
@@ -41,10 +47,12 @@ function displayChat(id:any, e:any){
         </div>
         <div className='chatlist__heading'>
           <h2>Chats</h2>
-          <button className='btn-nobg'>
+         
+          <button className='btn-nobg' onClick={toggleSetting}>
             <i className='fa fa-ellipsis-h'></i>
           </button>
         </div>
+        
         <div className='chatList__search'>
           <div className='search_wrap'>
             <input type='text' placeholder='Search Here' required />
@@ -56,9 +64,9 @@ function displayChat(id:any, e:any){
         <div className='chatlist__items'>
           {displayAllUserConvo.map((item: any, i: any) => {
             console.log(item[0], i);
-            
+
             return (
-              <div onClick={(e:any) => displayChat(item._id, e)}>
+              <div onClick={(e: any) => displayChat(item._id, e)}>
                 <ChatListItems
 
                   name={item.firstName}

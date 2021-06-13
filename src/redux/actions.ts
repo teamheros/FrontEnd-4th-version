@@ -1,4 +1,4 @@
-import { FORM_DISPLAY, USERS_CHAT, ALL_USER, USER_CONVO, CURRENT_USER } from "./actionTypes"
+import { FORM_DISPLAY, USERS_CHAT, ALL_USER, USER_CONVO, CURRENT_USER, USER_BIO_DATA } from "./actionTypes"
 
 export const selectForm = (form : string) =>{
     return {
@@ -20,6 +20,14 @@ export const setAllUSer= (user : string[]) =>{
         payload : user
     }
 }
+
+export const setUserBioData= (userBioData : string[]) =>{
+    return {
+        type : USER_BIO_DATA,
+        payload : userBioData
+    }
+}
+
 
 export const setUserConversation= (user : string[]) =>{
     console.log('Entering', user);

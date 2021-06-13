@@ -1,4 +1,5 @@
 import { createStore, combineReducers } from "redux";
+import { getUserBioDataById } from "../services/userServices";
 import { formReducer, usersChatsReducer, allusersReducer, userConnectedReducer, currentUseredReducer } from "./reducer";
 
 const reducer = combineReducers({
@@ -6,6 +7,7 @@ const reducer = combineReducers({
   chat : usersChatsReducer,
   user : allusersReducer,
   users : userConnectedReducer,
+  userBioData : getUserBioDataById,
   currentUser : currentUseredReducer
 });
 

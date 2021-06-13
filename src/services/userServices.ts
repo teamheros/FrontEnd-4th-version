@@ -20,6 +20,13 @@ export const getAllUser = async () => {
   return res.data.users;
 };
 
+//New Change//
+export const getUserBioDataById = async (id:any) => {
+  let res = await axios.get(`http://localhost:4000/api/userId/${id}`);
+  console.log('Get user bio data  ', res.data.users);
+  return res.data.users;
+};
+
 export const checkOtp = async (otp: any) => {
   let res = await axios.post(
     'http://localhost:4000/api/users-verify',
